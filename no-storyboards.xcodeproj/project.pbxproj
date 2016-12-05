@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DA66D8E81C36B1BB006B82D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66D8E71C36B1BB006B82D5 /* AppDelegate.swift */; };
-		DA66D8EA1C36B1BB006B82D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66D8E91C36B1BB006B82D5 /* ViewController.swift */; };
-		DA66D8ED1C36B1BB006B82D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA66D8EB1C36B1BB006B82D5 /* Main.storyboard */; };
+		DA66D8EA1C36B1BB006B82D5 /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66D8E91C36B1BB006B82D5 /* YellowVC.swift */; };
 		DA66D8EF1C36B1BB006B82D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA66D8EE1C36B1BB006B82D5 /* Assets.xcassets */; };
 		DA66D8F21C36B1BB006B82D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA66D8F01C36B1BB006B82D5 /* LaunchScreen.storyboard */; };
+		DA66D8FA1C36BF5A006B82D5 /* YellowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA66D8F91C36BF5A006B82D5 /* YellowVC.xib */; };
+		DA66D9001C36C35F006B82D5 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA66D8FE1C36C35F006B82D5 /* BlueVC.swift */; };
+		DA66D9011C36C35F006B82D5 /* BlueVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA66D8FF1C36C35F006B82D5 /* BlueVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA66D8E41C36B1BB006B82D5 /* no-storyboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "no-storyboards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA66D8E71C36B1BB006B82D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA66D8E91C36B1BB006B82D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA66D8EC1C36B1BB006B82D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA66D8E91C36B1BB006B82D5 /* YellowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
 		DA66D8EE1C36B1BB006B82D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA66D8F11C36B1BB006B82D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA66D8F31C36B1BB006B82D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA66D8F91C36BF5A006B82D5 /* YellowVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YellowVC.xib; sourceTree = "<group>"; };
+		DA66D8FE1C36C35F006B82D5 /* BlueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
+		DA66D8FF1C36C35F006B82D5 /* BlueVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlueVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		DA66D8E61C36B1BB006B82D5 /* no-storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				DA66D8FD1C36BFA7006B82D5 /* Controller */,
+				DA66D8FC1C36BF94006B82D5 /* Model */,
+				DA66D8FB1C36BF86006B82D5 /* View */,
 				DA66D8E71C36B1BB006B82D5 /* AppDelegate.swift */,
-				DA66D8E91C36B1BB006B82D5 /* ViewController.swift */,
-				DA66D8EB1C36B1BB006B82D5 /* Main.storyboard */,
 				DA66D8EE1C36B1BB006B82D5 /* Assets.xcassets */,
 				DA66D8F01C36B1BB006B82D5 /* LaunchScreen.storyboard */,
 				DA66D8F31C36B1BB006B82D5 /* Info.plist */,
 			);
 			path = "no-storyboards";
+			sourceTree = "<group>";
+		};
+		DA66D8FB1C36BF86006B82D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA66D8FF1C36C35F006B82D5 /* BlueVC.xib */,
+				DA66D8F91C36BF5A006B82D5 /* YellowVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DA66D8FC1C36BF94006B82D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DA66D8FD1C36BFA7006B82D5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA66D8E91C36B1BB006B82D5 /* YellowVC.swift */,
+				DA66D8FE1C36C35F006B82D5 /* BlueVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,12 +121,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Home;
 				TargetAttributes = {
 					DA66D8E31C36B1BB006B82D5 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 3576WDCD7W;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -123,9 +154,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA66D9011C36C35F006B82D5 /* BlueVC.xib in Resources */,
+				DA66D8FA1C36BF5A006B82D5 /* YellowVC.xib in Resources */,
 				DA66D8F21C36B1BB006B82D5 /* LaunchScreen.storyboard in Resources */,
 				DA66D8EF1C36B1BB006B82D5 /* Assets.xcassets in Resources */,
-				DA66D8ED1C36B1BB006B82D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA66D8EA1C36B1BB006B82D5 /* ViewController.swift in Sources */,
+				DA66D8EA1C36B1BB006B82D5 /* YellowVC.swift in Sources */,
 				DA66D8E81C36B1BB006B82D5 /* AppDelegate.swift in Sources */,
+				DA66D9001C36C35F006B82D5 /* BlueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA66D8EB1C36B1BB006B82D5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA66D8EC1C36B1BB006B82D5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA66D8F01C36B1BB006B82D5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -176,8 +201,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -221,8 +248,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -241,6 +270,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -254,6 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "home.no-storyboards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -265,6 +296,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "home.no-storyboards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -287,6 +319,7 @@
 				DA66D8F81C36B1BB006B82D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
